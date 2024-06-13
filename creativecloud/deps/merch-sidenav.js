@@ -1,4 +1,4 @@
-// branch: MWPW-147716-background-scroll commit: 39f55062db7c8b58f3704c3a9f13c7bc2458ecb6 Thu, 06 Jun 2024 07:52:38 GMT
+// branch: develop commit: 096f8baab4357ec01ad025c7cf1056a1c2110c49 Thu, 13 Jun 2024 14:09:08 GMT
 
 // src/sidenav/merch-sidenav.js
 import { html as html4, css as css5, LitElement as LitElement4 } from "/libs/deps/lit-all.min.js";
@@ -385,7 +385,7 @@ var TABLET_DOWN = "(max-width: 1199px)";
 var isIosDevice = typeof window !== "undefined" && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
 var documentListenerAdded = false;
 var previousBodyOverflowSetting;
-var disableBodyScroll = (targetElement, options) => {
+var disableBodyScroll = (targetElement) => {
   if (!targetElement)
     return;
   if (isIosDevice) {
