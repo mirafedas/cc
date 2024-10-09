@@ -37,7 +37,7 @@ export default {
     include: ['creativecloud/**'],
     exclude: ['test/mocks/**', 'test/**', '**/node_modules/**', 'creativecloud/deps/**'],
   },
-  debug: false,
+  debug: true,
   files: ['test/**/*.test.(js|html)'],
   nodeResolve: true,
   middlewares: [enableCORS],
